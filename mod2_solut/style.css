@@ -1,50 +1,62 @@
 * {
     box-sizing: border-box;
-    margin: 10;
+    margin: 0;
     padding: 0;
 }
 h1 {
-    color: black;
     text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-div.menuBox {
-    background-color: grey;
+.menuBox {
     border: 1px solid black;
-    margin: 20px;
-    padding: 30px 10px 10px 10px;
+    background-color: rgb(173, 173, 173);
     position: relative;
+    margin: 10px;
+    padding: 35px 10px 10px 10px;
 }
-div.menuBox h2 {
+.menuBox h2 {
     position: absolute;
-    top: 1px;
-    right: 1px;
-    padding: 0px 20px 0px 20px;
+    top: 0;
+    right: 0;
     border: 1px solid black;
-    border-top: 0px;
-    border-right: 0px;
+    border-top: 0;
+    border-right: 0;
+    text-align: center;
+    padding: 0px 20px 0px 20px;
 }
-
-div {
-    width: 100%;
+#box1 h2 {
+    background-color: rgb(22, 104, 22);
+    color: wheat;
 }
-
-div#box1 h2 {
-    background-color: yellow;
+#box2 h2 {
+    background-color: rgb(184, 184, 14);
+    color: rgb(88, 73, 73);
 }
-div#box2 h2 {
-    background-color: red
+#box3 h2 {
+    background-color: rgb(148, 17, 17);
+    color: white;
 }
-div#box3 h2 {
-    background-color: green;
-}
-.row {
-    width: 100%;
-}
-/********** Desktop view **********/
+/******** Desktop view ******/
 @media (min-width: 992px) {
-    .col-lg {
+    .col-lg-4 {
         float: left;
-        width: 33%;
-        
+        width: 30%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6 {
+        float: left;
+        width: 47%;
+    }
+    .col-md-12 {
+        float: left;
+        width: 96.3%
+    }
+}
+@media (max-width: 767px) {
+    .col-sm-12 {
+        float: left;
+        width: 96.3%
     }
 }
