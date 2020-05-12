@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 10;
+    padding: 0;
+}
+h1 {
+    color: black;
+    text-align: center;
+}
+div.menuBox {
+    background-color: grey;
+    border: 1px solid black;
+    margin: 20px;
+    padding: 30px 10px 10px 10px;
+    position: relative;
+}
+div.menuBox h2 {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    padding: 0px 20px 0px 20px;
+    border: 1px solid black;
+    border-top: 0px;
+    border-right: 0px;
+}
+
+div {
+    width: 100%;
+}
+
+div#box1 h2 {
+    background-color: yellow;
+}
+div#box2 h2 {
+    background-color: red
+}
+div#box3 h2 {
+    background-color: green;
+}
+.row {
+    width: 100%;
+}
+/********** Desktop view **********/
+@media (min-width: 992px) {
+    .col-lg {
+        float: left;
+        width: 33%;
+        
+    }
+}
